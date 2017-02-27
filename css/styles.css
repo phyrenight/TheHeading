@@ -1,0 +1,155 @@
+body {
+  margin: 2% 2% 0 2%;
+  background-color: #347ff7;
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  padding: 1% 0 1% 0;
+}
+
+h1 {
+  font-size: 400%;
+  color: #fff;
+  word-spacing: .35em;
+  font-style: italic;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1%;
+  font-size: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  border-radius: 5%;
+  width: 90%;
+  background-color: #fff;
+  margin: 4% auto;
+  box-shadow: 7px 5px 7px #000;
+  order: 2;
+}
+
+main article {
+  display: block;
+  margin: 3% auto;
+  width: 90%;
+  order: 1;
+}
+
+footer {
+  border-top: 1px #fff solid;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+}
+
+footer a {
+  color: #fff;
+  margin: 7%;
+  text-decoration: none;
+}
+
+footer div {
+  padding: 1% 0 1% 0;
+}
+
+h4 {
+  color: #fff;
+  margin-bottom: 0%;
+}
+
+article {
+  margin: 5% 0 5% 0;
+  box-shadow: 7px 5px 7px #000;
+  width: 95%;
+  background-color: #fff;
+}
+
+article p {
+  width: 75%;
+  text-align: left;
+  margin-left: 13%;
+  text-indent: 2%;
+  line-height: 2em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 2px 2px #ff0000;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+p::first-letter {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: Arial;
+}
+
+aside > p {
+  width: 80%;
+  text-align: center;
+  margin: 10%;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  text-decoration:line-through;
+}
+
+@media (min-width: 520px){
+  h1{
+    letter-spacing: .5em;
+  }
+
+  main {
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  aside{
+    order: 2;
+    width: 20%;
+    height: 30%;
+  }
+
+  #Mainarticle {
+    order: 1;
+  }
+
+  #article1 {
+    order: 2;
+  }
+
+  #article2 {
+    order: 3;
+  }
+
+  #article1, #article2 {
+    margin-right: 35%;
+  }
+  article {
+    text-align: center;
+    margin: 5%;
+  }
+
+  main article{
+    width: 60%;
+    text-align: center;
+  }
+}
